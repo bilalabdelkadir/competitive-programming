@@ -1,4 +1,11 @@
-i=0
+# The function is expected to return an INTEGER_ARRAY.
+# The function accepts INTEGER_ARRAY grades as parameter.
+#
+
+def gradingStudents(grades):
+    # Write your code here
+    marks = []
+    i=0
     while i < len(grades):
         if grades[i] >= 38 and grades[i] % 5 > 2:
             grades[i] += 5 - (grades[i] % 5)
